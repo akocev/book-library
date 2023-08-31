@@ -1,0 +1,19 @@
+<form [formGroup]="searchForm" (ngSubmit)="searchBook()">
+  <div class="search-container mt-5">
+    <div class="search-form input-group mb-3">
+      <input
+        id="searchTerm"
+        type="text"
+        class="form-control"
+        id="basic-url"
+        formControlName="searchTerm"
+        [placeholder]="'Search for a book...'"
+      />
+      <div class="input-group-append" (click)="searchBook()">
+        <span class="input-group-text"
+          ><i class="fa fa-search fa-2x" aria-hidden="true"></i
+        ></span>
+      </div>
+    </div>
+  </div>
+</form>

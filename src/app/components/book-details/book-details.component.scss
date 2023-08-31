@@ -1,0 +1,30 @@
+.book-details-container {
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  display: flex;
+}
+
+.book-details {
+  width: 800px;
+}
+
+.book-info {
+  border-left: 1px solid #80808073;
+  margin-left: 52px;
+  padding-left: 42px;
+}
+
+.book-description {
+  margin-top: 18px;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: -0.5px;
+  line-height: normal;
+}
+
+img {
+  border-radius: 12px;
+}

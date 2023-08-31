@@ -1,0 +1,13 @@
+<div class="books-container mb-5 mt-5">
+  <div class="books">
+    <div *ngFor="let book of books">
+      <div [routerLink]="['/book', book.id]">
+        <img
+          class="image"
+          src="{{ book.volumeInfo?.imageLinks?.thumbnail }}"
+          alt="{{ book.volumeInfo?.title }}"
+        />
+      </div>
+    </div>
+  </div>
+</div>

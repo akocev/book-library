@@ -1,0 +1,21 @@
+.tabs {
+  display: flex;
+  background-color: black;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 5px 30px;
+  color: white;
+  font-size: 28px;
+  line-height: normal;
+  font-family: Montserrat, "Roboto", "Noto", sans-serif;
+
+  &--selected {
+    text-decoration: line-through;
+  }
+}
+
+.tab:hover {
+  text-decoration: line-through;
+}

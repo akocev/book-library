@@ -1,0 +1,26 @@
+.books-container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.books {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 80px;
+  gap: 36px;
+}
+
+.image {
+  width: 128px;
+  height: 192px;
+  object-fit: fill;
+  cursor: pointer;
+  border-radius: 12px;
+  overflow: hidden;
+  float: left;
+}
+
+.image:hover {
+  opacity: 0.3;
+}

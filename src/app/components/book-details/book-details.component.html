@@ -1,0 +1,22 @@
+<div class="book-details-container mt-5 mb-5" *ngIf="book$ | async as book">
+  <div class="book-details">
+    <div class="image">
+      <img src="{{ book.volumeInfo?.imageLinks?.thumbnail }}" />
+      <div class="book-info">
+        <h4 class="mt-4">{{ book.volumeInfo?.title }}</h4>
+        <div>by: {{ book.volumeInfo?.authors }}</div>
+        <div>
+          Rating: <b>{{ book.volumeInfo?.averageRating }}</b>
+        </div>
+        <div>
+          Publisher: <b>{{ book.volumeInfo?.publisher }}</b>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="book-description"
+      [innerHTML]="book.volumeInfo?.description"
+    ></div>
+  </div>
+</div>
